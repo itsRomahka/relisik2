@@ -5,6 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Золоте кільце - Ювелірний магазин</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Додаткові стилі */
+        .product-detail {
+            text-align: center;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .product-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .product-price {
+            font-size: 1.5em;
+            color: #e60000;
+            margin-top: 15px;
+        }
+
+        .product-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .product-info p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .buy-now {
+            background-color: #ffd700;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buy-now:hover {
+            background-color: #e6b800;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,10 +84,12 @@
 
     <!-- Опис товару -->
     <section class="product-detail">
-        <img src="https://zolotiyvik.ua/media/catalog/product/cache/7d867076b0c31e5e4acf36489cc1e4f1/z/o/zolotoe-kolco-s-brilliantami-artikul-kb70001-foto-1.webp" alt="Золоте кільце" class="product-image">
+        <h3 class="product-title">Золоте кільце</h3>
+        <div class="image-container">
+            <img src="https://zolotiyvik.ua/media/catalog/product/cache/7d867076b0c31e5e4acf36489cc1e4f1/z/o/zolotoe-kolco-s-brilliantami-artikul-kb70001-foto-1.webp" alt="Золоте кільце" class="product-image">
+        </div>
+        <p class="product-price">Ціна: 4999 грн</p>
         <div class="product-info">
-            <h2>Золоте кільце</h2>
-            <p class="product-price">Ціна: 4999 грн</p>
             <p>Опис: Це витончене золоте кільце ручної роботи з діамантом. Ідеально підходить для особливих моментів і стане відмінним подарунком.</p>
             <button class="buy-now">Купити</button>
         </div>

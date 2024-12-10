@@ -3,72 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ювелірний магазин</title>
+    <title>Ювелірний Світ</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Підключення Font Awesome для іконок -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <!-- Хедер з навігацією -->
     <header>
         <div class="header-container">
             <div class="logo">Ювелірний Світ</div>
             <nav>
-                <a href="index.html">Головна</a>
-                <a href="sales.html">Акції</a>
-                <a href="contact.html">Контакти</a>
+                <a href="#">Головна</a>
+                <a href="#about">Про нас</a>
+                <a href="contacts.html">Контакти</a>
             </nav>
-            <div class="search">
-                <input type="text" placeholder="Пошук прикрас...">
-                <button>Пошук</button>
-            </div>
         </div>
     </header>
 
-    <!-- Головний банер -->
-    <section class="banner">
-        <div class="banner-overlay">
-            <h1>Розкішні ювелірні вироби для вас</h1>
-            <p>Вишукані кільця, кольє, сережки та багато іншого</p>
-            <button class="shop-now">Купити зараз</button>
-        </div>
+    <section class="hero">
+        <h1>Ласкаво просимо до Ювелірного Світу</h1>
+        <p>Знайдіть свою ідеальну прикрасу за вигідною ціною.</p>
+        <button>Переглянути акції</button>
     </section>
 
-    <!-- Популярні товари з іконками -->
-    <section class="products">
-        <h2>Популярні прикраси</h2>
+    <section class="featured-products">
+        <h2>Наші топ-пропозиції</h2>
         <div class="product-grid">
-            <!-- Кільце -->
             <div class="product-item">
-                <i class="fas fa-ring"></i> <!-- Іконка кільця -->
-                <p class="product-name">Золоте кільце</p>
-                <p class="product-price">Ціна: 4999 грн</p>
-                <a href="product1.html" class="buy-btn">Детальніше</a>
+                <img src="https://zolotiyvik.ua/media/catalog/product/cache/7d867076b0c31e5e4acf36489cc1e4f1/z/o/zolotoe-kolco-s-brilliantami-artikul-kb70001-foto-1.webp" alt="Золоте кільце" class="product-image">
+                <div class="product-name">Золоте кільце</div>
+                <div class="product-price">3999 грн</div>
+                <a href="product1.html" class="details-link">Детальніше</a>
             </div>
-
-            <!-- Кольє -->
             <div class="product-item">
-                <i class="fas fa-gem"></i> <!-- Іконка для кольє -->
-                <p class="product-name">Срібне кольє</p>
-                <p class="product-price">Ціна: 2999 грн</p>
-                <a href="product2.html" class="buy-btn">Детальніше</a>
+                <img src="https://aurum.in.ua/upload/iblock/67a/jwjzt76dgprduftoc5sv7pfzwx5j93oe13661366.webp" alt="Золоті сережки">
+                <div class="product-name">Золоті сережки</div>
+                <div class="product-price">5999 грн</div>
+                <a href="product2.html" class="details-link">Детальніше</a>
             </div>
-
-            <!-- Браслет -->
             <div class="product-item">
-                <i class="fas fa-bracelet"></i> <!-- Іконка для браслету -->
-                <p class="product-name">Браслет з діамантами</p>
-                <p class="product-price">Ціна: 9999 грн</p>
-                <a href="product3.html" class="buy-btn">Детальніше</a>
+                <img src="https://lunet.ua/content/images/38/1000x1000l99nn0/braslet-tenis-u-bilomu-zoloti-z-diamantamy-536501521-99831548559507.webp" alt="Золотий браслет">
+                <div class="product-name">Золотий браслет</div>
+                <div class="product-price">7999 грн</div>
+                <a href="product3.html" class="details-link">Детальніше</a>
+            </div>
+            <div class="product-item">
+                <img src="https://stolychnashop.com.ua/upload/webp_cache/resize_cache/iblock/f02/qvj4g0ycdbyec0i48h8s69sibzy5kv8p/1000_1000_19ca222485c532e9b6f3c346495a9401f/zolotoe_kole_s_rodirovaniem_art_370095r.webp" alt="Золоте кольє">
+                <div class="product-name">Золоте кольє</div>
+                <div class="product-price">6999 грн</div>
+                <a href="product4.html" class="details-link">Детальніше</a>
+            </div>
+            <div class="product-item">
+                <img src="https://kuz.ua/media/catalog/product/cache/b87fe78e597a5fd88ea2297166fbc9e2/3/8/3840279_1.jpg" alt="Підвіска з діамантом">
+                <div class="product-name">Підвіска з діамантом</div>
+                <div class="product-price">8999 грн</div>
+                <a href="product5.html" class="details-link">Детальніше</a>
             </div>
         </div>
     </section>
 
-    <!-- Футер -->
-    <footer>
-        <p>&copy; 2024 Ювелірний Світ | Контакти | Доставка | Про нас</p>
-    </footer>
+    <section class="about-us" id="about">
+        <h2>Про наш магазин</h2>
+        <p>"Ювелірний Світ" — це провідний ювелірний магазин, який пропонує широкий вибір високоякісних прикрас із золота та дорогоцінних каменів. Ми дбаємо про наших клієнтів, гарантуючи найкраще обслуговування та вигідні ціни.</p>
+        <p>Наша місія — дарувати радість та підкреслювати вашу індивідуальність за допомогою унікальних прикрас.</p>
+    </section>
 
+    <footer>
+        <nav>
+            <a href="#about">Про нас</a>
+            <a href="contacts.html">Контакти</a>
+            <a href="delivery.html">Доставка</a>
+        </nav>
+        <p>© 2024 Ювелірний Світ</p>
+    </footer>
 </body>
 </html>
